@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula2 - Forms</title>
+</head>
+<body>
+    <!-- FORM com método POST -->
+    <form action="/" method="POST">
+        <!-- INPUT TEXT -->
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" name="name">
+        </div>
+        <!-- INPUT PASSWORD -->
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" name="password">
+        </div>
+        <!-- RADIO -->
+        <div>
+            <span>Sexo</span>
+            <label for="M">Masculino</label>
+            <input type="radio" name="sexo" value="M">
+
+            <label for="F">Feminino</label>
+            <input type="radio" name="sexo" value="f">
+        </div>
+        <!-- CHECKBOX -->
+        <div>
+            <span>Opções</span>
+            <label for="1">1</label>
+            <input type="checkbox" name="opcoes[]" value="1">
+            
+            <label for="2">2</label>
+            <input type="checkbox" name="opcoes" value="2">
+
+            <label for="3">3</label>
+            <input type="checkbox" name="opcoes" value="3">
+        </div>
+        <!-- SELECT -->
+        <div>
+            <label for="select">Select</label>
+            <select name="select">
+                <option value="" disabled selected></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <!-- TEXTAREA -->
+        <div>
+            <label for="textarea">Textarea</label>
+            <textarea name="textarea" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
